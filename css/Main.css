@@ -3,10 +3,15 @@
 //  1. BALISE RESPONSIVE
 //  2. PARALLAX
 //  3. HEADER
-//
-//
+//  4. coloration des liens texte surbrillance
+//  5. FOOTER
 //
 -------------------*/
+
+/* COULEUR DU REPERE CONTAINER*/
+.repere{
+    color: white;
+}
 
 /*1. balise responsive */
 
@@ -127,7 +132,30 @@
 }
 
 /* ---------2. PARALLAX ---------------  */
-   
+    .parallax-container {
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        display: inherit;
+    }
+    body{
+        margin:0;
+        font-family:sans-serif;
+        font-size:16px;
+/*        line-height:100px;*/
+/*        color:#ffffff;*/
+/*        text-align:center;*/
+    }
+    /* background setup */
+    .background {
+        background-repeat:repeat;
+        /* custom background-position */
+        background-position:50% 50%;
+        /* ie8- graceful degradation */
+        background-position:50% 50%\9 !important;
+        background-attachment: inherit;
+        width: 50%;
+    }
 
 /*---------- FIN PARALLAX ------------*/
 
@@ -191,7 +219,7 @@ nav .nav-wrapper {
     margin-top: 0px;
 }
 
-/* coloration des liens texte surbrillance */
+/*4. coloration des liens texte surbrillance */
 
 A:link {
     COLOR: rgb(255, 255, 255);
@@ -236,7 +264,7 @@ A:hover {
 }
 
 
-/* FOOTER */
+/*5. FOOTER */
 
 footer.page-footer {
     background-color: #9ccc65;
