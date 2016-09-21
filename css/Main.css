@@ -1,0 +1,506 @@
+/*----- INDEX  ------
+//
+//  1. BALISE RESPONSIVE
+//  2. PARALLAX
+//  3. HEADER
+//  4. coloration des liens texte surbrillance
+//  5. FOOTER
+//
+-------------------*/
+
+/* COULEUR DU REPERE CONTAINER*/
+.repere{
+    color: white
+}
+
+/*1. balise responsive */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .contenu {
+        width: 500px;
+        background-color: blue;
+    }
+    .hide-on-med-and-down {
+        display: none;
+    }
+    #mobile-demo {
+        display: inline-block !important;
+    }
+    .brand-logo {
+        left: 15% !important;
+    }
+    .imglogo {
+        width: 90px !important;
+    }
+    i.small {
+        display: none;
+    }
+    footer {
+        text-align: center;
+    }
+    #fbplugin {
+        display: none;
+    }
+    #PJ {
+        display: none;
+    }
+    .logo {
+        float: none !important;
+        width: 75px !important;
+    }
+
+    #logofooter {
+        float: none !important;
+        width: 75px !important;
+    }
+
+    footer ul li {
+        list-style: none !important;
+    }
+    footer p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .white-text {
+        margin-top: 20px !important;
+    }
+    .card {
+        width: 80%;
+        margin-left: 15%;
+    }
+    .card-title {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hide-on-med-and-down {
+        display: none;
+    }
+    #mobile-demo {
+        display: inline-block !important;
+    }
+    .brand-logo {
+        left: 35% !important;
+    }
+    .imglogo {
+        width: 25% !important;
+    }
+    footer {
+        text-align: center;
+    }
+    #fbplugin {
+        display: none;
+    }
+    #PJ {
+        display: none;
+    }
+    .logo {
+        float: left !important;
+        width: 75px !important;
+    }
+    
+    #logofooter {
+        float: none !important;
+        width: 75px !important;
+    }
+
+    footer ul li {
+        list-style: none !important;
+    }
+    footer p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #icnfooter {
+        display: none;
+    }
+    .white-text {
+        margin-top: 20px !important;
+    }
+    .card {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .contenu {
+        width: 800px;
+        background-color: red;
+    }
+}
+
+/* ---------2. PARALLAX ---------------  */
+    .parallax-container {
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        display: inherit;
+    }
+    body{
+        margin:0;
+        font-family:sans-serif;
+    }
+    /* background setup */
+    .background {
+        background-repeat:repeat;
+        /* custom background-position */
+        background-position:50% 50%;
+        /* ie8- graceful degradation */
+        background-position:50% 50%\9 !important;
+        background-attachment: inherit;
+        width: 50%;
+    }
+
+/*---------- FIN PARALLAX ------------*/
+
+/*3. HEADER */
+
+.imglogo {
+    width: 150px;
+    height: 100%;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.container {
+    margin-top: 25px;
+}
+.containermain {
+    width: 100%;
+    
+}
+
+.rightmain {
+    float: left;
+    position: relative;
+    z-index: 1;
+    margin-left: 15px;
+}
+
+.contact {
+    margin-right: 15px;
+}
+
+nav,
+i.material-icons {
+    margin-right: 15px;
+}
+
+/* barre de navigation */
+
+nav .button-collapsemain {
+    float: left;
+    position: relative;
+    z-index: 1;
+    height: 56px;
+    margin-left: auto;
+}
+
+.colorbis{
+    color: snow;
+}
+
+#mobile-demo {
+    display: none;
+}
+
+nav .nav-wrapper {
+    width: 100%;
+    margin-top: 0px;
+}
+
+
+/* CARDS */
+#card-text{
+    font-size: 10px;
+    line-height: 10px;
+    margin: 0px;
+}
+
+
+/*4. coloration des liens texte surbrillance */
+
+A:link {
+    COLOR: rgb(255, 255, 255);
+    TEXT-DECORATION: none;
+    FONT-SIZE: 1.0em;
+}
+
+A:hover {
+    COLOR: rgb(218, 148, 32);
+    TEXT-DECORATION: none;
+    FONT-SIZE: 1.0em;
+}
+
+#lien:link {
+    COLOR: rgb(178, 193, 205);
+    TEXT-DECORATION: none;
+    FONT-SIZE: 1.0em;
+}
+
+#lien:hover {
+    COLOR: rgb(218, 148, 32);
+    TEXT-DECORATION: none;
+    FONT-SIZE: 1.0em;
+}
+
+/* FORMULAIRES */
+.formulaire {
+    display: inline-block;
+}
+
+.formulaire .champ {
+    background-color: rgb(36, 121, 0);
+    width: 300px;
+    height: 35px;
+}
+
+.formulaire .bouton {
+    background-color: rgb(70, 121, 0);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+}
+
+
+/*5. FOOTER */
+
+footer.page-footer {
+    background-color: #9ccc65;
+    color: white;
+    margin-top: 0px;
+}
+
+footer ul li {
+    list-style: disc;
+}
+
+footer.page-footer .footer-copyright {
+    background: none;
+    text-align: center;
+}
+
+#logofooter {
+    width: 50px;
+    float: left;
+    padding-right: 1px;
+    margin-right: 2px;
+}
+
+.white-text {
+    margin-top: 4px;
+}
+
+.phone {
+    padding: 3px;
+}
+
+i.small {
+    float: left;
+    margin-right: 5px;
+}
+
+fb-page {
+    text-align: center;
+}
+
+
+.icone {
+    /*height: 40%;*/
+    width: 50%;
+}
+
+.taille {
+    padding: 0%;
+}
+
+.haut {
+    padding-top: 15%;
+}
+
+/* PRODUIT */
+
+.buy {
+    width: 70%;
+    margin-left: 10%;
+}
+
+.title {
+    color: forestgreen;
+}
+
+.desctitle {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.descpdt {
+    font-size: 14px;
+}
+
+#produit {
+    padding: 35px;
+}
+
+h3 {
+    text-align: center;
+    color: ;
+}
+
+/*ICONE RETOUR HAUT*/
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #9ccc65 url("../images/up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/*CONTACT FORM*/
+
+#contactform {
+    width: 60%;
+    height: 100%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.modal-content p {
+    text-align: center;
+}
+
+.modal-content h4 {
+    color: #9ccc65;
+    text-align: center;
+}
+.btn {
+    float: right;
+    background-color: #9ccc65;
+}
+
+.contacth3 {
+    color: #9ccc65;
+}
+.input-field .prefix {
+     color: #9ccc65;
+   }
+
+/*BIENVENUE*/
+.icnbien {
+    width: 50%;
+}
+
+h5 {
+    color: #4aad1f;
+    font-size: larger;
+}
+
+.welcome {
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.large {
+    width: 70%;
+}
+/* CARDS */
+.card{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    margin: 0.5rem 0 1rem 0;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+
+.activator{
+    height: 250px;
+    width: 250px;
+}
+
+.marge{
+    margin-left: 15px;
+}
+
+#taille{
+    height: 125px;
+    width: 235px;
+}
+
+/* IMAGE 3D */
+
+.container3d{
+	-webkit-perspective:600;
+}
+#cube{
+	width: 200px;
+	height: 800px;
+	margin: 0 auto 40px; /*pour centrer le cube sur la page*/
+	-webkit-transform-style: preserve-3d;
+}
+#cube div{
+	position:absolute;
+	-webkit-backface-visibility: hidden;
+	overflow:hidden;
+	width:200px;
+   	height:200px;
+   	opacity:0.5;
+}
+
+#front{
+   	-webkit-transform: translateZ( 100px );
+}
+#back{
+	-webkit-transform: translateZ( -100px );
+}	
+
+#left{
+	-webkit-transform: rotateY( 90deg ) translateZ( 100px );
+}
+#right{
+	-webkit-transform: rotateY( -90deg ) translateZ( 100px );
+}
+
+#up{
+    -webkit-transform: rotateX(90deg) translateZ( 100px );
+}
+#bottom{
+	-webkit-transform: rotateX(-90deg) translateZ( 100px );
+}
+
+#cube{
+  	width: 200px;
+	height: 200px;
+	margin: 0 auto 40px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 2s;
+	-webkit-transform: translateZ(-100px) rotateX( -220deg ) rotateY( 45deg ); 
+}
+
+#cube.rotation {
+	-webkit-animation: rotateCube 8s infinite ease-in-out;
+}
+/*animation css*/
+@-webkit-keyframes rotateCube {
+	0% { 
+		-webkit-transform: translateZ( -100px ) rotateX(   0deg ) rotateY(   0deg );
+	}
+	100% {
+		-webkit-transform: translateZ( -100px ) rotateX( 360deg ) rotateY( 360deg );
+	}
+
+    width: 100%;
+
+}
