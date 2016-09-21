@@ -11,7 +11,7 @@
     <!-- PARALLAX -->
     <div class="parallax-container">
         <div class="parallax">
-            <img id="image" src="images/baroque5.jpg" data-img-width="1600" data-img-height="1064" data-diff="100">
+            <img id="image" src="images/baroque2.jpg" data-img-width="1600" data-img-height="1064" data-diff="100">
         </div>
         
         <!-- REPERES DE COLONNES POUR IMPLEMENTATION -->
